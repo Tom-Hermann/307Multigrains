@@ -8,7 +8,7 @@
 
 MAIN = src/main.py
 
-NAME = 307Multigrains
+NAME = 307multigrains
 
 NAME_TEST = unittest
 

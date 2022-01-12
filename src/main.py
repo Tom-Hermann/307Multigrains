@@ -9,9 +9,14 @@
 
 from sys import argv
 from src.error import error
+from src.simplexe import simplexe_methode
 
 def main():
-    error(argv[1:])
+    resources, prices = error(argv[1:])
+    print("Resources:", end='')
+    for re, i in zip(resources, range(len(resources))):
+        print(" {} F{}".format(int(re), i + 1), end=',' if i != 3 else '\n\n')
+    simplexe_methode(resources, prices)
     exit(0)
 
 if __name__ == "__main__":
